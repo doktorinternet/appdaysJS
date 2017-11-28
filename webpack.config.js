@@ -1,5 +1,5 @@
 module.exports = {
-    entry: './code.js',
+    entry: './data.js',
     output: {
       filename: 'distribution/cfrZ.js'
     }
