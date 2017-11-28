@@ -1,5 +1,5 @@
-let movieData = require('./data');
-let $ = require('jquery');
+let movieData = require("./data");
+let $ = require("jquery");
 
 var postId = 0;
 function renderMovie(movie) {
@@ -61,4 +61,3 @@ $(".stars").on("click", "span", function (e) {
     let i = $(e.target).attr("id");
     changeStarRating(i);
 });
-

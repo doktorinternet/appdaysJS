@@ -7,12 +7,20 @@
     "styles": "lessc style.less distribution/style.css",
     "bundle": "webpack",
     "copyindex": "cp index.html distribution/index.html",
-    "build": "npm run bundle && npm run styles && npm run copyindex"
+    "lintless": "stylelint style.less",
+    "lintjs": "eslint .",
+    "lint": "npm run lintless && npm run lintjs",
+    "build": "npm run bundle && npm run styles && npm run copyindex",
+    
+    "tscompile": "tsc data.ts code.ts",
+    "clean": "rm data.js code.js style.css distribution/*"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^4.12.0",
     "less": "^2.7.3",
+    "stylelint": "^8.3.1",
     "webpack": "^3.8.1"
   },
   "dependencies": {
