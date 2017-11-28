@@ -1,10 +1,15 @@
+let movieData = require('./data');
+let $ = require('jquery');
+
 var postId = 0;
 function renderMovie(movie) {
     postId++;
     var castList = "";
+    
     movie.cast.forEach(actor => {
         castList += "<li>" + actor + "</li>";
     });
+    
     var stars = "";
     for (let i = 0; i < 5; i++) {
         stars += "<span class=\"ratingStar\" id=\"starNr" +
@@ -32,9 +37,10 @@ function renderMovie(movie) {
     // document.getElementById("content").innerHTML = newPost;
 }
 
-renderMovie(wakingLife);
-renderMovie(predestination);
-// renderMovie(movie);
+movieData.posts.forEach(post => {
+    console.log("Hej hej");
+    renderMovie(post);
+});
 
 var changeStarRating = function (id) {
     // console.log(id)

@@ -4,11 +4,18 @@
   "description": "The coolest movie reviewing site of them all yo",
   "main": "code.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "styles": "lessc style.less distribution/style.css",
+    "bundle": "webpack",
+    "copyindex": "cp index.html distribution/index.html",
+    "build": "npm run bundle && npm run styles && npm run copyindex"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "less": "^2.7.3"
+    "less": "^2.7.3",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
   }
 }

@@ -7,9 +7,9 @@ class MovieData {
         public cast: string[]) { }
 }
 
-"<p>" +
-    "<span>Starring:</span>" +
-"</p>";
+// "<p>" +
+//     "<span>Starring:</span>" +
+// "</p>";
 
 var title = "Waking life";
 var image = "https://resizing.flixster.com/riYUyvhcJIpEcryjp_6XX_Z-Tr0=/206x305/v1.bTsxMTIwODQ5MDtqOzE3NTg5OzEyMDA7MTE3OTsxNTcy";
@@ -35,3 +35,6 @@ var predestination = new MovieData(
 )
 
 
+module.exports = {
+    posts: [wakingLife, predestination],
+}

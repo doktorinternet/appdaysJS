@@ -1,3 +1,5 @@
+var movieData = require('./data');
+var $ = require('jquery');
 var postId = 0;
 function renderMovie(movie) {
     postId++;
@@ -29,9 +31,10 @@ function renderMovie(movie) {
     $("#content").append(newPost);
     // document.getElementById("content").innerHTML = newPost;
 }
-renderMovie(wakingLife);
-renderMovie(predestination);
-// renderMovie(movie);
+movieData.posts.forEach(function (post) {
+    console.log("Hej hej");
+    renderMovie(post);
+});
 var changeStarRating = function (id) {
     // console.log(id)
     var postId = id.substring(7, id.length);
