@@ -1,6 +1,8 @@
 {
     "defaultSeverity": "warning",
-    "extends": [],
+    "extends": [
+        "tslint:recommended"
+    ],
     "jsRules": {},
     "rules": {},
     "rulesDirectory": []
