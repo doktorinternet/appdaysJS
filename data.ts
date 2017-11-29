@@ -23,8 +23,8 @@ const wakingLife: MovieData = {
 const predestination: MovieData = {
     body: "A little mindfucky, but not too much. Somewhat predictable, ut overall enjoyable as well",
     cast: ["Ethan Hawke (again..?)", "Sarah Snook", "Noah Taylor"],
-    image: "http://is3.mzstatic.com/mage/thumb/Video1/v4/55/90/be/5590beab-6bde-f520-" +
-    "d93f -bbf97e2c1c89/source/1200x630bb.jpg",
+    image: "https://a.ltrbxd.com/resized/sm/upload/3m/1w/jy/xa/kDdUtDsGMQ3OYwoBtEQyJIGPz4V-0-230-0-" +
+            "345-crop.jpg?k=0ded074d9d",
     title: "Predestination",
 };
 
