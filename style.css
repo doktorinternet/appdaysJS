@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Slabo+27px');
+body {
+  background-color: #000000;
+}
+img {
+  max-height: 300px;
+  max-width: 300px;
+}
+.post {
+  display: flex;
+  background-color: wheat;
+  margin: 1%;
+}
+p {
+  -webkit-margin-after: 0px;
+}
+.castList {
+  -webkit-margin-before: 2%;
+}
+.textbox {
+  margin: 5%;
+  font-family: 'Slabo 27px', serif;
+}
+.image {
+  padding: 1%;
+  margin-bottom: 0px;
+  height: fit-content;
+}
+.ratingStar {
+  color: #887757;
+  font-size: 170%;
+  cursor: pointer;
+}
+.stars {
+  -webkit-margin-before: -20px;
+  user-select: none;
+}
+.filled {
+  color: #ffa600;
+}
