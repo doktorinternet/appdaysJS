@@ -14,18 +14,18 @@ const body = "Cool little film about interesting corners of life, both awake and
 const cast = ["Ethan Hawke", "Trevor Jack Brooks", "Lorelei Linklater"];
 
 const wakingLife: MovieData = {
-    Title: title,
-    Image: image,
     Body: body,
     Cast: cast,
+    Image: image,
+    Title: title,
 };
 
 const predestination: MovieData = {
-    Title: "Predestination",
-    Image: "http://is3.mzstatic.com/image/thumb/Video1/v4/55/90/be/5590beab-6bde-f520-" +
-        "d93f -bbf97e2c1c89/source/1200x630bb.jpg",
     Body: "A little mindfucky, but not too much. Somewhat predictable, ut overall enjoyable as well",
     Cast: ["Ethan Hawke (again..?)", "Sarah Snook", "Noah Taylor"],
+    Image: "http://is3.mzstatic.com/image/thumb/Video1/v4/55/90/be/5590beab-6bde-f520-" +
+    "d93f -bbf97e2c1c89/source/1200x630bb.jpg",
+    Title: "Predestination",
 };
 
 export const movieData = {
