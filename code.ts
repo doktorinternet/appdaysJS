@@ -1,5 +1,7 @@
+import * as angular from "angular";
 import * as $ from "jquery";
 import {movieData} from "./data";
+const app = angular.module("appdays", []);
 
 let postId = 0;
 function renderMovie(movie) {
@@ -55,3 +57,7 @@ $(".stars").on("click", "span", (e) => {
     const i = $(e.target).attr("id");
     changeStarRating(i);
 });
+
+app.controller("appdays-controller", ($scope) => {
+    $scope.message = "Hello world!";
+  });

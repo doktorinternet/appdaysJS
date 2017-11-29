@@ -1,10 +1,4 @@
-class MovieData {
-    constructor(
-        public title: string,
-        public image: string,
-        public body: string,
-        public cast: string[]) { }
-}
+import {MovieData} from "./interfaces";
 
 const titel = "Waking life";
 const bild = "https://resizing.flixster.com/riYUyvhcJIpEcryjp_6XX_Z-Tr0=/206x305/v1.bTsx" +
@@ -13,14 +7,14 @@ const text = "Cool little film about interesting corners of life, both awake and
     " Makes me think about nice things. Recommend to anyone who likes pretentions philosophy ;)";
 const actors = ["Ethan Hawke", "Trevor Jack Brooks", "Lorelei Linklater"];
 
-const wakingLife: MovieData = {
+export const wakingLife: MovieData = {
     body: text,
     cast: actors,
     image: bild,
     title: titel,
 };
 
-const predestination: MovieData = {
+export const predestination: MovieData = {
     body: "A little mindfucky, but not too much. Somewhat predictable, ut overall enjoyable as well",
     cast: ["Ethan Hawke (again..?)", "Sarah Snook", "Noah Taylor"],
     image: "https://a.ltrbxd.com/resized/sm/upload/3m/1w/jy/xa/kDdUtDsGMQ3OYwoBtEQyJIGPz4V-0-230-0-" +
