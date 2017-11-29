@@ -2,14 +2,14 @@
   "name": "appdays",
   "version": "1.0.0",
   "description": "The coolest movie reviewing site of them all yo",
-  "main": "code.js",
+  "main": "code.ts",
   "scripts": {
     "styles": "lessc style.less distribution/style.css",
     "bundle": "webpack",
     "copyindex": "cp index.html distribution/index.html",
     "lintless": "stylelint style.less",
-    "lintjs": "eslint .",
-    "lint": "npm run lintless && npm run lintjs",
+    "lintts": "tslint -c tslint.json '*.ts'",
+    "lint": "npm run lintless && npm run lintts",
     "build": "npm run bundle && npm run styles && npm run copyindex",
     "tscompile": "tsc data.ts code.ts",
     "clean": "rm data.js code.js style.css distribution/*"
@@ -18,9 +18,11 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^8.0.53",
-    "eslint": "^4.12.0",
     "less": "^2.7.3",
     "stylelint": "^8.3.1",
+    "ts-loader": "^3.1.1",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2",
     "webpack": "^3.8.1"
   },
   "dependencies": {

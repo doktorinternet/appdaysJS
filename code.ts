@@ -1,21 +1,19 @@
-let movieData = require("./data");
-let $ = require("jquery");
+import * as $ from "jquery";
+import {movieData} from "./data";
 
-var postId = 0;
+let postId = 0;
 function renderMovie(movie) {
     postId++;
-    var castList = "";
-    
-    movie.cast.forEach(actor => {
+    let castList = "";
+    movie.cast.forEach((actor) => {
         castList += "<li>" + actor + "</li>";
     });
-    
-    var stars = "";
+    let stars = "";
     for (let i = 0; i < 5; i++) {
         stars += "<span class=\"ratingStar\" id=\"starNr" +
             i + "" + postId + "\">" + "&#9733;" + "</span>";
     }
-    var newPost =
+    const newPost =
         "<div class=\"post\" id=\"" + postId + "\">" +
         "<div class=\"image\">" +
         "<img src=\"" + movie.image + "\" alt=\"\"></img>" +
@@ -34,19 +32,15 @@ function renderMovie(movie) {
         "</div>";
 
     $("#content").append(newPost);
-    // document.getElementById("content").innerHTML = newPost;
 }
 
-movieData.posts.forEach(post => {
-    console.log("Hej hej");
+movieData.posts.forEach((post) => {
     renderMovie(post);
 });
 
-var changeStarRating = function (id) {
-    // console.log(id)
-    var postId = id.substring(7, id.length);
-    // console.log("postid " + postId);
-    var stars = $("#" + postId + " .ratingStar");
+const changeStarRating = (id) => {
+    const postID = id.substring(7, id.length);
+    const stars = $("#" + postID + " .ratingStar");
     id = id.charAt(6);
     for (let i = 0; i < stars.length; i++) {
         if (i <= id) {
@@ -55,9 +49,9 @@ var changeStarRating = function (id) {
             stars[i].classList.remove("filled");
         }
     }
-}
+};
 
-$(".stars").on("click", "span", function (e) {
-    let i = $(e.target).attr("id");
+$(".stars").on("click", "span", (e) => {
+    const i = $(e.target).attr("id");
     changeStarRating(i);
 });

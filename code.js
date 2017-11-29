@@ -1,4 +1,6 @@
-var movieData = require("./data");
+"use strict";
+exports.__esModule = true;
+var data_1 = require("./data");
 var $ = require("jquery");
 var postId = 0;
 function renderMovie(movie) {
@@ -31,7 +33,7 @@ function renderMovie(movie) {
     $("#content").append(newPost);
     // document.getElementById("content").innerHTML = newPost;
 }
-movieData.posts.forEach(function (post) {
+data_1.movieData.posts.forEach(function (post) {
     console.log("Hej hej");
     renderMovie(post);
 });
@@ -54,3 +56,4 @@ $(".stars").on("click", "span", function (e) {
     var i = $(e.target).attr("id");
     changeStarRating(i);
 });
+//# sourceMappingURL=code.js.map
