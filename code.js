@@ -1,7 +1,7 @@
 "use strict";
 exports.__esModule = true;
-var data_1 = require("./data");
 var $ = require("jquery");
+var data_1 = require("./data");
 var postId = 0;
 function renderMovie(movie) {
     postId++;
@@ -31,17 +31,13 @@ function renderMovie(movie) {
         "</div>" +
         "</div>";
     $("#content").append(newPost);
-    // document.getElementById("content").innerHTML = newPost;
 }
 data_1.movieData.posts.forEach(function (post) {
-    console.log("Hej hej");
     renderMovie(post);
 });
 var changeStarRating = function (id) {
-    // console.log(id)
-    var postId = id.substring(7, id.length);
-    // console.log("postid " + postId);
-    var stars = $("#" + postId + " .ratingStar");
+    var postID = id.substring(7, id.length);
+    var stars = $("#" + postID + " .ratingStar");
     id = id.charAt(6);
     for (var i = 0; i < stars.length; i++) {
         if (i <= id) {

@@ -11,7 +11,6 @@
     "lintts": "tslint -c tslint.json '*.ts'",
     "lint": "npm run lintless && npm run lintts",
     "build": "npm run bundle && npm run styles && npm run copyindex",
-    "tscompile": "tsc data.ts code.ts",
     "clean": "rm data.js code.js style.css distribution/*"
   },
   "author": "",
