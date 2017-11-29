@@ -1,20 +1,6 @@
 {
     "defaultSeverity": "warning",
-    "no-shadowed-variable": [
-        true,
-        {
-            "class": true,
-            "enum": true,
-            "function": true,
-            "interface": false,
-            "namespace": true,
-            "typeAlias": false,
-            "typeParameter": false
-        }
-    ],
-    "extends": [
-        "tslint:recommended"
-    ],
+    "extends": [],
     "jsRules": {},
     "rules": {},
     "rulesDirectory": []
