@@ -1,8 +1,8 @@
 {
     "defaultSeverity": "warning",
     "extends": [
-        "tslint:recommended",
-        "no-shadowed-variable: false"
+        "no-shadowed-variable: false",
+        "tslint:recommended"
     ],
     "jsRules": {},
     "rules": {},
